@@ -1,6 +1,11 @@
 {
   "geode": "5.7.1",
-  "gd": "2.2081",
+  "gd": {
+    "win": "2.2081",
+    "android": "2.2081",
+    "mac": "2.2081",
+    "ios": "2.2081"
+  },
   "id": "conexion.gdstreamchat",
   "name": "GD StreamChat",
   "version": "v1.0.0",
@@ -17,7 +22,7 @@
       "name": "Language",
       "default": "English",
       "description": "Chat language",
-      "options": [
+      "one-of": [
         "English",
         "Русский"
       ]
@@ -45,7 +50,7 @@
       "type": "string",
       "name": "Chat position",
       "default": "Bottom right",
-      "options": [
+      "one-of": [
         "Bottom right",
         "Bottom left",
         "Top right",
